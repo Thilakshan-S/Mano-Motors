@@ -109,14 +109,25 @@ nav{
 }
 
 .nav-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0,0.2);
+  text-align: center;
 }
 
-.nav-btn button{
+.nav-btn a button{
+  background-color: transparent;
+  border: none;
+}
+
+/* .nav-btn button{
     background-color: var(--button-color);
-    padding: 10px 15px;
+    padding: 5px 15px;
     margin: 8px;
     border-radius: 5px;
     border: none;
@@ -125,7 +136,7 @@ nav{
     font-weight: 400;
     text-decoration: none;
     color: rgb(0, 0, 0);
-}
+} */
 
 .nav-btn button:hover{
   background-color: #fb8500;
@@ -180,6 +191,7 @@ nav{
 
 .hero-video{
   position: relative;
+  bottom: 90px;
   width: 100% ;
   object-fit: cover;
   z-index: -5;
@@ -188,7 +200,7 @@ nav{
 }
 
 #about{
-  margin-top:10px;
+  margin-top:20px;
   box-sizing: border-box;
   overflow: hidden;
   padding: 10px;
@@ -197,6 +209,11 @@ nav{
 .about-content{
   margin: 15px 2px;
   text-align: justify;
+}
+
+.about-content p{
+  font-size: 20px;
+  line-height: 35px;
 }
 
 #about h2{
@@ -242,6 +259,11 @@ nav{
   color: var(--heading-color);
 }
 
+.vision p{
+  font-size: 20px;
+  line-height: 35px;
+}
+
 .vision img{
   width: 85%;
   border-radius: 15px;
@@ -260,6 +282,12 @@ nav{
   text-align: end;
   color: var(--heading-color);
 }
+
+.commitment p{
+  font-size: 20px;
+  line-height: 35px;
+}
+
 
 .commitment img{
   width: 85%;
@@ -298,7 +326,13 @@ nav{
 }
 
 .service-div h6{
+  font-size: 20px;
+}
+
+.service-div p{
+  font-weight: 450;
   font-size: 15px;
+  line-height: 30px;
 }
 
 .service-div img{

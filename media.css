@@ -2,7 +2,7 @@
 /*tab screen*/
 @media (min-width: 767px) {
     .nav-btn{
-        margin-left: 198px;
+        margin: 0 auto;
     }
 
     .hero-video{
