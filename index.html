@@ -4,25 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="nav.css">
     <title>Mano Motors| Leading Spare parts Shop</title>
-</head>
+    </head>
     <header>
-        <nav>
-            
-            <div class="logo">
-                <h2>Mano Motors</h2>
+        <nav class="nav" aria-label="Primary Navigation">
+            <div class="nav__brand">
+                <a href="#hero" class="brand-link">Mano Motors</a>
             </div>
-            <!-- <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul> -->
+
             <div class="nav-btn">
-                <button>Lets Connect</button>
+                <button><a href="https://"></a>Lets connect</button>
             </div>
+
+            <button
+                class="nav-toggle"
+                id="navToggle"
+                aria-controls="primaryMenu"
+                aria-expanded="false"
+                aria-label="Open menu"
+            >
+                <span class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <div class="nav-panel" id="primaryMenu" role="menu" tabindex="-1">
+                <ul class="nav-list" role="menubar">
+                    <li role="none"><a role="menuitem" href="#">Home</a></li>
+                    <li role="none"><a role="menuitem" href="#">About Us</a></li>
+                    <li role="none"><a role="menuitem" href="#">Services</a></li>
+                    <li role="none"><a role="menuitem" href="#">Products</a></li>
+                    <li role="none"><a role="menuitem" href="#">Gallery</a></li>
+                    <li role="none"><a role="menuitem" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
         </nav>
     </header>
 
@@ -32,16 +53,19 @@
             <p>Your one-stop shop for quality spare parts.</p>
             <a class="common-btn" href="#" class="btn">Shop Now</a>
         </div>
-
-        <video class="hero-video" autoplay muted loop>
-            <source src="sources/hero_background video.mp4">
-        </video>
+        <div>
+            <video class="hero-video" autoplay muted loop>
+                <source src="sources/hero_background video.mp4">
+            </video>
+        </div>
     </section>
 
     <section id="about">
-        <h2>About Our Company</h2>
         <div class="about-content">
-            <p>At Mano Motors, we are dedicated to keeping your vehicles running smoothly. Established in 2024, our mission is to provide high-quality spare parts for 3wheeler, cars, motorcycles, and commercial vehicles at affordable prices.</p>
+            <div>
+                <h2>About Our Company</h2>
+                <p>At Mano Motors, we are dedicated to keeping your vehicles running smoothly. Established in 2024, our mission is to provide high-quality spare parts for 3wheeler, cars, motorcycles, and commercial vehicles at affordable prices.</p>
+            </div>
             <img src="sources/shop01.webp" alt="Mano Motors shop">
         </div>
 
@@ -77,15 +101,19 @@
         </div>
 
         <div class="vision">
-            <h3>Our Vision</h3>
-            <p>To be the most trusted vehicle spare parts supplier in [City/Region], ensuring every customer drives safely with confidence.</p>
+            <div>
+                <h3>Our Vision</h3>
+                <p>To be the most trusted vehicle spare parts supplier in [City/Region], ensuring every customer drives safely with confidence.</p>
+            </div>
             <img src="sources/shop02.webp" alt="mano motots vision img">
         </div>
 
         <div class="commitment">
-            <h3>Our Commitment</h3>
-            <p>Customer satisfaction is our top priority. We don’t just sell parts – we provide solutions for your vehicle’s needs.</p>
-            <img src="sources/shop02.webp" alt="mano motors commitment img">
+            <div class="commitment-content">
+                <h3>Our Commitment</h3>
+                <p>Customer satisfaction is our top priority. We don’t just sell parts – we provide solutions for your vehicle’s needs.</p>
+            </div>
+            <img src="sources/commit-img.png" alt="mano motors commitment img">
         </div>
     </section>
 
@@ -169,5 +197,7 @@
         </div>
 
     </Footer>
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>

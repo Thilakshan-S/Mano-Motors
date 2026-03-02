@@ -1,0 +1,303 @@
+
+/*tab screen*/
+@media (min-width: 767px) {
+    .nav-btn{
+        margin-left: 198px;
+    }
+
+    .hero-video{
+        position: relative;
+        bottom: 150px;
+        transform: scale(1.9);
+        border-radius: 15px 20px 120px 220px;
+    }
+
+    .about-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+        padding: 10px;
+    }
+
+    .about-content h2{
+        order: 0;
+    }
+
+    .about-content p{
+        order: 3;
+    }
+
+    .about-content img{
+        order: 2;
+    }
+
+    .reasons-main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .vision{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding: 8px;
+    }
+
+    .commitment{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .commitment-content{
+        order: 2;
+    }
+    
+    .commitment-content h3{
+        text-align: center;
+    }
+
+    .service-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+
+}
+
+@media (min-width:992px){
+
+    #hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .hero-video{
+        width: 100% ;
+        position: relative;
+        top: 100px;
+        right: 50px;
+        object-fit: cover;
+        z-index: -5;
+        transform: scale(1.9);
+        border-radius: 15px 20px 120px 220px;
+    }
+
+    .hero-content h2{
+        font-size: 40px;
+    }
+
+    .hero-content h2 span{
+        font-size: 60px;
+    }
+
+    .hero-content p{
+        font-size: 30px;
+    }
+
+    .common-btn{
+    transform: scale(1.4);
+    margin-top: 25px;
+    padding: 10px 20px ;
+}
+
+.hero-content{
+  text-align: center;
+  margin: 150px 20px 0px 20px;
+
+}
+
+.hero-content h2::before{
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        background-color: #ffb703;
+        opacity: 0.4;
+        top: -25px;
+        left: -80px;
+        border-radius: 50%;
+        z-index: -100;
+    }
+
+#about{
+  margin-top:50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.about-content h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.about-content p{
+    font-size: 20px;
+}
+
+.vision h3{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+
+.vision p{
+    font-size: 20px;
+}
+
+.commitment h3{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+
+.commitment p{
+    font-size: 20px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer li{
+    padding-top: 20px;
+}
+
+.footer li a{
+    font-size: 20px !important;
+}
+
+.footer-contact-container a h2{
+    font-size: 40px;
+}
+    
+}
+
+/*For Desktop View*/
+@media (min-width:1200px){
+
+    #hero{
+        padding-bottom: 150px;
+    }
+
+
+    .hero-video{
+        width: 100% ;
+        position: relative;
+        top: 100px;
+        right: 50px;
+        object-fit: cover;
+        z-index: -5;
+        transform: scale(1.9);
+        border-radius: 15px 20px 120px 220px;
+    }
+
+    .hero-content h2::before{
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        background-color: #ffb703;
+        opacity: 0.4;
+        top: -25px;
+        left: -80px;
+        border-radius: 50%;
+        z-index: -100;
+    }
+
+    .hero-content h2 span{
+        font-size: 65px;
+    }
+
+    .hero-content p{
+        font-size: 30px;
+    }
+
+    .common-btn{
+    transform: scale(1.4);
+    margin-top: 25px;
+    padding: 10px 35px ;
+}
+
+.hero-content{
+  text-align: center;
+  margin: 150px 20px 0px 20px;
+
+}
+
+#about{
+  margin-top:30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
+}
+
+
+.about-content h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.about-content p{
+    font-size: 25px;
+}
+
+.reasons h3{
+font-size: 35px;
+
+}
+
+.reasons-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.vision h3{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.vision p{
+    font-size: 25px;
+}
+
+.commitment h3{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.commitment p{
+    font-size: 25px;
+}
+
+#service h2{
+    font-size: 35px;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.service-div h6{
+    font-size: 20px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer li{
+    padding-top: 20px;
+}
+
+.footer li a{
+    font-size: 20px !important;
+}
+
+.footer-contact-container a h2{
+    font-size: 40px;
+}
+}
